@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .buttonWrapper {
+            display: grid;
+            grid-gap: .5rem;
+            font-family: "Open Sans", "system-ui"; /* Ej live*/
+            border: 1px solid black; /* Ej live*/
+            max-width: 600px;  /* Ej live*/
+            margin: 0 auto; /* Ej live*/
+            padding: .5rem;
+            grid-template-columns:repeat(auto-fill, 30%);
+            
+        }
+
+        .button {
+            cursor: pointer;
+            padding: 0.5rem;
+            text-align: center;
+            -webkit-box-align: center;
+            align-items: center;
+            font-size: 12px;
+            background-color: white;
+            border: 1px solid;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+        .button p {
+            margin: 0 auto;
+            white-space: wrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .button img {
+            width: 20px;
+            height: auto;
+        }
+
+        .green {
+            color: rgb(57, 140, 39);
+            border-color: rgb(57, 140, 39);
+        }
+        .blue {
+            color:rgb(88, 183, 212);
+            border-color:rgb(88, 183, 212);
+        }
+        .red {
+            color: rgb(245, 96, 96);
+            border-color: rgb(245, 96, 96);
+        }
+
+    </style>
+
+    <div class="buttonWrapper">
+
+        <div class="button green">
+            <img src="cta_accept.png"/>
+            <p>Acceptera uppdrag</p>
+        </div>
+
+        <div class="button blue">
+            <img src="cta_assign.png"/>
+            <p>Starta uppdrag</p>
+        </div>
+
+        <div class="button red">
+            <img src="cta_deny.png"/>
+            <p>Bärgning påbörjad</p>
+        </div>
+
+        <div class="button red">
+            <img src="cta_deny.png"/>
+            <p>Vid uppställningsplats</p>
+        </div>
+
+        <div class="button red">
+            <img src="cta_deny.png"/>
+            <p>Avboka</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
